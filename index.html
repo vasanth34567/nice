@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memories of Malar & Vasanth</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+      function showGallery(type) {
+    document.getElementById('yoursGallery').style.display = type === 'yours' ? 'grid' : 'none';
+    document.getElementById('oursGallery').style.display = type === 'ours' ? 'grid' : 'none';
+
+    document.getElementById('videosGallery').style.display = type === 'videos' ? 'grid' : 'none';
+}
+
+function openFullImage(src) {
+    document.getElementById('fullImage').src = src;
+    document.getElementById('downloadBtn').href = src;
+    document.getElementById('imagePreview').style.display = 'flex';
+}
+function closePreview() {
+    document.getElementById('imagePreview').style.display = 'none';
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+    const images = document.querySelectorAll(".gallery img");
+    images.forEach(img => {
+        img.addEventListener("click", function() {
+            openFullImage(this.src);
+        });
+    });
+
+    const videos = document.querySelectorAll(".gallery video");
+    videos.forEach(video => {
+        video.addEventListener("click", function() {
+            openFullVideo(this.src);
+        });
+    });
+});
+
+function openFullVideo(src) {
+    document.getElementById('fullVideo').src = src;
+    document.getElementById('videoPreview').style.display = 'fullVideo';
+}
+
+function closeVideoPreview() {
+    document.getElementById('videoPreview').style.display = 'Download';
+}
+    
+
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Memories of Vasanth & Malar </h1>
+        <p>Our Journey from 2021 - 2023</p>
+    </header>
+    <div class="buttons">
+        <button onclick="showGallery('yours')">Yours</button>
+        <button onclick="showGallery('ours')">Ours</button>
+        <button onclick="showGallery('videos')">Videos</button>
+    </div>
+    <section id="yoursGallery" class="gallery" style="display: none;">
+        <img src="20210326013849390.jpg" alt="Ours Memory 34">
+        <img src="1.jpg" alt="Yours Memory 1">
+        <img src="2.jpg" alt="Yours Memory 2">
+        <img src="3.jpg" alt="Yours Memory 3">
+        <img src="4.jpg" alt="Ours Memory 4">
+        <img src="6.jpg" alt="Ours Memory 6">
+        <img src="7.jpg" alt="Ours Memory 7">
+        <img src="8.jpg" alt="Ours Memory 8">
+        <img src="9.jpg" alt="Ours Memory 9">
+        <img src="10.jpg" alt="Ours Memory 10">
+        <img src="11.jpg" alt="Ours Memory 11">
+        <img src="12.jpg" alt="Ours Memory 12'>
+        <img src="13.jpg" alt="Ours Memory 12'>
+        <img src="14.jpg" alt="Ours Memory 14">
+        <img src="15.jpg" alt="Ours Memory 15">
+        <img src="16.jpg" alt="Ours Memory 16">
+        <img src="17.jpg" alt="Ours Memory 17">
+        <img src="18.jpg" alt="Ours Memory 18">
+        <img src="19.jpg" alt="Ours Memory 19">
+        <img src="20.jpg" alt="Ours Memory 20">
+        <img src="21.jpg" alt="Ours Memory 21">
+        <img src="22.jpg" alt="Ours Memory 22">
+        <img src="23.jpg" alt="Ours Memory 23">
+        <img src="24.jpg" alt="Ours Memory 24">
+        <img src="25.jpg" alt="Ours Memory 25">
+        <img src="26.jpg" alt="Ours Memory 26">
+        <img src="27.jpg" alt="Ours Memory 27">
+        <img src="28.jpg" alt="Ours Memory 28">
+        <img src="29.jpg" alt="Ours Memory 29">
+        <img src="30.jpg" alt="Ours Memory 30">
+        <img src="31.jpg" alt="Ours Memory 31">
+        <img src="32.jpg" alt="Ours Memory 32">
+        <img src="33.jpg" alt="Ours Memory 33">
+        <img src="34.jpg" alt="Ours Memory 34">
+        <img src="35.jpg" alt="Ours Memory 35">
+        <img src="36.jpg" alt="Ours Memory 36">
+        <img src="37.jpg" alt="Ours Memory 37">
+        <img src="38.jpg" alt="Ours Memory 38">
+        <img src="39.jpg" alt="Ours Memory 39">
+        <img src="40.jpg" alt="Ours Memory 40">
+        <img src="41.jpg" alt="Ours Memory 41">
+        <img src="42.jpg" alt="Ours Memory 42">
+        <img src="43.jpg" alt="Ours Memory 43">
+        <img src="44.jpg" alt="Ours Memory 44">
+        <img src="45.jpg" alt="Ours Memory 45">
+        <img src="46.jpg" alt="Ours Memory 46">
+        <img src="47.jpg" alt="Ours Memory 47">
+        <img src="48.jpg" alt="Ours Memory 48">
+        <img src="49.jpg" alt="Ours Memory 49">
+        <img src="50.jpg" alt="Ours Memory 50">
+        <img src="51.jpg" alt="Ours Memory 51">
+        <img src="52.jpg" alt="Ours Memory 52">
+        <img src="53.jpg" alt="Ours Memory 53">
+        <img src="54.jpg" alt="Ours Memory 54">
+        <img src="55.jpg" alt="Ours Memory 55">
+        <img src="56.jpg" alt="Ours Memory 56">      
+        <img src="57.jpg" alt="Ours Memory 57">
+        <img src="91.jpg" alt="Ours Memory 59">
+        <img src="92.jpg" alt="Ours Memory 60">
+      
+        <!-- Add more images -->
+
+    </section>
+    <section id="oursGallery" class="gallery" style="display: none;">
+
+        <img src="58.jpg" alt="Ours Memory 1">
+        <img src="59.jpg" alt="Ours Memory 2">
+        <img src="60.jpg" alt="Ours Memory 3">
+        <img src="61.jpg" alt="Ours Memory 4">
+        <img src="62.jpg" alt="Ours Memory 5">
+        <img src="63.jpg" alt="Ours Memory 6">
+        <img src="64.jpg" alt="Ours Memory 7">
+        <img src="65.jpg" alt="Ours Memory 8">
+        <img src="66.jpg" alt="Ours Memory 9">
+        <img src="67.jpg" alt="Ours Memory 10">
+        <img src="68.jpg" alt="Ours Memory 11">
+        <img src="69.jpg" alt="Ours Memory 12'>
+        <img src="70.jpg" alt="Ours Memory 13">
+        <img src="71.jpg" alt="Ours Memory 14">
+        <img src="72.jpg" alt="Ours Memory 15">
+        <img src="73.jpg" alt="Ours Memory 16">
+        <img src="74.jpg" alt="Ours Memory 17">
+        <img src="75.jpg" alt="Ours Memory 18">
+        <img src="76.jpg" alt="Ours Memory 19">
+        <img src="77.jpg" alt="Ours Memory 20">
+        <img src="78.jpg" alt="Ours Memory 21">
+        <img src="79.jpg" alt="Ours Memory 22">
+        <img src="80.jpg" alt="Ours Memory 23">
+        <img src="81.jpg" alt="Ours Memory 24">
+        <img src="82.jpg" alt="Ours Memory 25">
+        <img src="83.jpg" alt="Ours Memory 26">
+        <img src="84.jpg" alt="Ours Memory 27">
+        <img src="85.jpg" alt="Ours Memory 28">
+        <img src="86.jpg" alt="Ours Memory 29">
+        <img src="87.jpg" alt="Ours Memory 30">
+        <img src="88.jpg" alt="Ours Memory 31">
+        <img src="89.jpg" alt="Ours Memory 32">
+        <img src="90.jpg" alt="Ours Memory 34">
+        <img src="93.jpg" alt="Ours Memory 35">
+      
+        
+        <!-- Add more images -->
+    </section>
+    <section id="videosGallery" class="gallery" style="display: none;">
+        <video controls onclick="openFullVideo(this.src)">
+            <source src="InShot_20221028_031332647.mp4" type="video/mp4">
+        </video>
+        <video controls onclick="openFullVideo(this.src)">
+            <source src="InShot_20221028_031448557.mp4" type="video/mp4">
+        </video>
+        <video controls onclick="openFullVideo(this.src)">
+            <source src="VID-l8pkp4sq.mp4" type="video/mp4">
+        </video>
+        <video controls onclick="openFullVideo(this.src)">
+            <source src="VID20221028135830.mp4" type="video/mp4">
+        </video>
+    </section>
+    <div id="imagePreview" class="preview" style="display: none;">
+        <span class="close" onclick="closePreview()">&times;</span>
+        <img id="fullImage" src="">
+        <a id="downloadBtn" download>Download</a>
+    </div>
+    <div id="videoPreview" class="preview" style="display: none;">
+        <span class="close" onclick="closeVideoPreview()">&times;</span>
+        <video id="fullVideo" controls>
+            <source src="" type="video/mp4">
+        </video>
+    </div>
+</body>
+</body>
+</html>
